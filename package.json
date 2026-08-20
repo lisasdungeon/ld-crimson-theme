@@ -19,7 +19,7 @@
   "license": "Proprietary",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ld-crimson-blood/ld-crimson-theme.git"
+    "url": "https://github.com/lisasdungeon/ld-crimson-theme.git"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.0",
