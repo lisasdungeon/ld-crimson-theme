@@ -54,6 +54,18 @@ function validateModule() {
     }
   }
 
+  const listed = [
+    ...(moduleJson.esmodules || []),
+    ...(moduleJson.scripts || []),
+    ...(moduleJson.styles || []),
+    ...(moduleJson.languages || []).map((entry) => (typeof entry === 'string' ? entry : entry.path))
+  ].filter(Boolean);
+  for (const rel of listed) {
+    if (!fs.existsSync(path.join(projectRoot, rel))) {
+      errors.push(`module.json lists missing file: ${rel}`);
+    }
+  }
+
   const codeFiles = collectFiles(projectRoot, (name) => /\.(js|mjs|css)$/.test(name));
   for (const file of codeFiles) {
     const lineCount = fs.readFileSync(file, 'utf8').split('\n').length;
