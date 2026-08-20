@@ -1,0 +1,251 @@
+/* LD Crimson Blood Theme - CSS Styles */
+
+/* Custom Properties for Crimson Theme */
+:root {
+  --rnk-crimson-primary: #8B0000;
+  --rnk-crimson-secondary: #DC143C;
+  --rnk-crimson-accent: #B22222;
+  --rnk-crimson-dark: #2F0000;
+  --rnk-crimson-light: #FF6B6B;
+  --rnk-crimson-text: #F5F5F5;
+  --rnk-crimson-shadow: rgba(139, 0, 0, 0.3);
+}
+
+/* Global theme application */
+.ld-crimson-theme-theme {
+  --color-text-dark-primary: var(--rnk-crimson-text);
+  --color-text-light-primary: var(--rnk-crimson-dark);
+  --color-border-light-primary: var(--rnk-crimson-accent);
+  --color-border-dark-primary: var(--rnk-crimson-primary);
+}
+
+/* Application windows */
+.ld-crimson-theme-theme .window-app {
+  border: 2px solid var(--rnk-crimson-primary);
+  box-shadow: 0 0 20px var(--rnk-crimson-shadow);
+}
+
+.ld-crimson-theme-theme .sidebar-popout {
+  border: 2px solid var(--rnk-crimson-primary);
+  box-shadow: 0 0 20px var(--rnk-crimson-shadow);
+}
+
+.ld-crimson-theme-theme .window-app .window-header {
+  background: linear-gradient(135deg, var(--rnk-crimson-primary), var(--rnk-crimson-secondary));
+  color: var(--rnk-crimson-text);
+  border-bottom: 1px solid var(--rnk-crimson-accent);
+}
+
+.ld-crimson-theme-theme .window-app .window-content {
+  background: rgba(47, 0, 0, 0.3);
+  color: var(--rnk-crimson-text);
+  border: 1px solid var(--rnk-crimson-accent);
+}
+
+/* Buttons */
+.ld-crimson-theme-theme button {
+  background: linear-gradient(135deg, var(--rnk-crimson-primary), var(--rnk-crimson-secondary));
+  border: 1px solid var(--rnk-crimson-accent);
+  color: var(--rnk-crimson-text);
+  transition: all 0.3s ease;
+}
+
+.ld-crimson-theme-theme button:hover {
+  background: linear-gradient(135deg, var(--rnk-crimson-secondary), var(--rnk-crimson-accent));
+  box-shadow: 0 0 10px var(--rnk-crimson-shadow);
+}
+
+.ld-crimson-theme-theme .ui-control {
+  background-image: url('../assets/icons/right control buttons.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid var(--rnk-crimson-accent);
+  color: var(--rnk-crimson-text);
+  transition: all 0.3s ease;
+}
+
+.ld-crimson-theme-theme .ui-control:hover {
+  box-shadow: 0 0 10px var(--rnk-crimson-shadow);
+}
+
+/* Form elements */
+.ld-crimson-theme-theme input,
+.ld-crimson-theme-theme select,
+.ld-crimson-theme-theme textarea {
+  background: rgba(47, 0, 0, 0.8);
+  border: 1px solid var(--rnk-crimson-accent);
+  color: var(--rnk-crimson-text);
+}
+
+.ld-crimson-theme-theme select {
+  box-sizing: border-box;
+  height: var(--input-height, 2rem);
+  line-height: var(--input-height, 2rem);
+  padding: 0 0.5rem;
+  text-align: left;
+  text-align-last: left;
+  vertical-align: middle;
+}
+
+.ld-crimson-theme-theme input:focus,
+.ld-crimson-theme-theme select:focus,
+.ld-crimson-theme-theme textarea:focus {
+  border-color: var(--rnk-crimson-light);
+  box-shadow: 0 0 5px var(--rnk-crimson-shadow);
+}
+
+/* Sidebar and navigation */
+.ld-crimson-theme-theme #sidebar {
+  background: linear-gradient(180deg, var(--rnk-crimson-dark), var(--rnk-crimson-primary));
+  border-right: 2px solid var(--rnk-crimson-accent);
+}
+
+.ld-crimson-theme-theme .sidebar-tab {
+  color: var(--rnk-crimson-text);
+  border-bottom: 1px solid var(--rnk-crimson-accent);
+}
+
+.ld-crimson-theme-theme .sidebar-tab.active {
+  background: var(--rnk-crimson-secondary);
+}
+
+/* Chat and UI elements */
+.ld-crimson-theme-theme #chat-log {
+  background: rgba(47, 0, 0, 0.9);
+  border: 1px solid var(--rnk-crimson-accent);
+}
+
+.ld-crimson-theme-theme .message {
+  background: rgba(139, 0, 0, 0.1);
+  border: 1px solid var(--rnk-crimson-primary);
+  color: var(--rnk-crimson-text);
+}
+
+/* Scene controls */
+.ld-crimson-theme-theme #controls {
+  background: rgba(47, 0, 0, 0.9) url('modules/ld-crimson-theme/assets/icons/scene%20control%20button.jpg') center center no-repeat;
+  background-size: cover;
+  border: 1px solid var(--rnk-crimson-accent);
+}
+
+.ld-crimson-theme-theme .control {
+  background-image: url('../assets/icons/right control buttons.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid var(--rnk-crimson-accent);
+  color: var(--rnk-crimson-text);
+}
+
+.ld-crimson-theme-theme .control-tool {
+  color: var(--rnk-crimson-text);
+}
+
+.ld-crimson-theme-theme .control-tool.active {
+  background: var(--rnk-crimson-secondary);
+  box-shadow: 0 0 5px var(--rnk-crimson-shadow);
+}
+
+/* Ensure RNK module scene control buttons show Crimson red even if other styles override */
+.ld-crimson-theme-theme .control-tool[data-control^="rnk"],
+.ld-crimson-theme-theme .control-tool[data-tool^="rnk"],
+.ld-crimson-theme-theme .control-tool[data-control^="crimson"],
+.ld-crimson-theme-theme .control-tool[data-tool^="crimson"] {
+  color: #cc0000 !important;
+  text-shadow: 0 0 8px rgba(180, 0, 0, 0.8) !important;
+}
+
+/* Hotbar */
+.ld-crimson-theme-theme #hotbar {
+  background: linear-gradient(90deg, var(--rnk-crimson-dark), var(--rnk-crimson-primary));
+  border: 2px solid var(--rnk-crimson-accent);
+}
+
+.ld-crimson-theme-theme .macro {
+  background: rgba(139, 0, 0, 0.8) url('../assets/icons/hot buttons.png') center center no-repeat;
+  background-size: contain;
+  border: 1px solid var(--rnk-crimson-accent);
+  color: var(--rnk-crimson-text);
+}
+
+.ld-crimson-theme-theme .macro:hover {
+  background: var(--rnk-crimson-secondary);
+  box-shadow: 0 0 5px var(--rnk-crimson-shadow);
+}
+
+/* Token HUD */
+.ld-crimson-theme-theme .token-hud {
+  background: rgba(47, 0, 0, 0.9);
+  border: 2px solid var(--rnk-crimson-accent);
+  box-shadow: 0 0 10px var(--rnk-crimson-shadow);
+}
+
+/* Context menus */
+.ld-crimson-theme-theme .context {
+  background: var(--rnk-crimson-dark);
+  border: 1px solid var(--rnk-crimson-accent);
+  box-shadow: 0 0 10px var(--rnk-crimson-shadow);
+}
+
+.ld-crimson-theme-theme .context li {
+  color: var(--rnk-crimson-text);
+}
+
+.ld-crimson-theme-theme .context li:hover {
+  background: var(--rnk-crimson-secondary);
+}
+
+/* Pause banner */
+.ld-crimson-theme-theme #pause {
+  background-image: url('../assets/icons/pause banner.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 200px;
+  margin: 40px 0 0 0;
+  transform: none;
+  border: 2px solid var(--rnk-crimson-accent);
+  box-shadow: 0 0 14px var(--rnk-crimson-shadow);
+  z-index: 70;
+  overflow: hidden;
+  font-size: 0.8em;
+}
+
+.ld-crimson-theme-theme #pause figcaption {
+  font-family: 'Old English Text MT', serif;
+  color: var(--rnk-crimson-text);
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.ld-crimson-theme-theme #pause::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0.16) 42%,
+    rgba(255, 255, 255, 0.34) 50%,
+    rgba(255, 255, 255, 0.16) 58%,
+    rgba(255, 255, 255, 0) 75%
+  );
+  transform: translateX(-130%);
+  animation: rnk-crimson-pause-shimmer 4s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes rnk-crimson-pause-shimmer {
+  0% {
+    transform: translateX(-130%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
+}

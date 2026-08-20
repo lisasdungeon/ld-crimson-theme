@@ -1,0 +1,39 @@
+{
+  "name": "ld-crimson-theme",
+  "version": "1.0.4",
+  "description": "A dark crimson theme for Foundry VTT that enhances the user interface with atmospheric styling and random background images.",
+  "type": "module",
+  "scripts": {
+    "syntax": "node tests/check-syntax.mjs",
+    "validate": "node tests/validate.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run syntax && npm run validate && npm test"
+  },
+  "author": "Lisa's Dungeon",
+  "contributors": [
+    {
+      "name": "Lisa's Dungeon",
+      "url": "https://github.com/lisasdungeon"
+    }
+  ],
+  "license": "Proprietary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ld-crimson-blood/ld-crimson-theme.git"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-terser": "^0.4.0",
+    "rimraf": "^5.0.0",
+    "rollup": "^4.0.0"
+  },
+  "keywords": [
+    "foundry",
+    "foundry-vtt",
+    "theme",
+    "ui",
+    "crimson",
+    "dark-theme"
+  ],
+  "main": "src/ld-crimson-theme.js"
+}

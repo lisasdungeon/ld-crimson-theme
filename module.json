@@ -1,0 +1,45 @@
+{
+  "id": "ld-crimson-theme",
+  "title": "LD Crimson Theme",
+  "description": "A dark crimson theme for Foundry VTT that enhances the user interface with atmospheric styling and random background images.",
+  "version": "1.0.4",
+  "compatibility": {
+    "minimum": 13,
+    "verified": 14
+  },
+  "authors": [
+    {
+      "name": "Lisa's Dungeon",
+      "url": "https://github.com/lisasdungeon",
+      "discord": "MystryssLysa",
+      "email": "Lisasdungeon@gmail.com",
+      "patreon": "https://patreon.com/LisasDungeon"
+    }
+  ],
+  "url": "https://github.com/ld-crimson-blood/ld-crimson-theme",
+  "manifest": "https://github.com/ld-crimson-blood/ld-crimson-theme/releases/latest/download/module.json",
+  "download": "https://github.com/ld-crimson-blood/ld-crimson-theme/releases/latest/download/ld-crimson-theme.zip",
+  "license": "https://github.com/ld-crimson-blood/ld-crimson-theme/blob/main/LICENSE",
+  "readme": "https://github.com/ld-crimson-blood/ld-crimson-theme/blob/main/README.md",
+  "changelog": "https://github.com/ld-crimson-blood/ld-crimson-theme/blob/main/CHANGELOG.md",
+  "esmodules": [
+    "src/ld-crimson-theme.js"
+  ],
+  "styles": [
+    "styles/ld-crimson-theme.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "relationships": {
+    "systems": []
+  },
+  "socket": false,
+  "protected": false,
+  "coreTranslation": false
+}
